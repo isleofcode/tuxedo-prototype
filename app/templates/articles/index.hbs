@@ -1,0 +1,12 @@
+{{#each}}
+  <div class="media">
+    <a class="pull-left thumbnail" href="#">
+      <img data-src="holder.js/100%x180" class="media-object">
+    </a>
+    <div class="media-body">
+      <h4 class="media-heading">
+        {{#link-to 'article.edit' id}} {{title}} {{/link-to}}
+      </h4>
+    </div>
+  </div>
+{{/each}}

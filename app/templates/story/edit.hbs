@@ -1,0 +1,38 @@
+<div class="media">
+  <a class="pull-left thumbnail" href="#">
+    <img data-src="holder.js/100%x180" class="media-object">
+  </a>
+  <div class="media-body">
+    <h4 class="media-heading">
+      {{title}}
+    </h4>
+    <p> Due to {{trend}} for the past 2 hours </p>
+    <p> <span class="label label-info"> http://bit.ly/url </span> </p> 
+  </div>
+</div>
+
+<div class="well well-sm">
+  {{summary}}
+</div>
+
+<form role="form">
+  <div class="form-group">
+    <label> Tweet Headline </label>
+    {{view Ember.TextField value=title class="form-control"}}
+  </div>
+  
+  <div class="form-group">
+    Publish in
+    {{view Ember.Select 
+           content=postTimes
+           value=postTime
+           class="form-control"}}
+  </div>
+  
+  <div class="form-group">
+    <div class="btn-group">
+      <button type="button" class="btn btn-danger" {{action "deny"}}>Deny</button>
+      <button type="button" class="btn btn-success" {{action "approve"}}>Approve</button>
+    </div>
+  </div>
+</form>

@@ -1,0 +1,14 @@
+html, body {
+  margin: 20px;
+}
+
+.thumbnail img {
+  min-height: 50px;
+  height: 50px;
+  width: 50px;
+}
+
+/* Force click events */
+[data-ember-action] {
+  cursor: pointer;
+}

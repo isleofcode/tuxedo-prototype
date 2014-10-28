@@ -1,0 +1,22 @@
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      {{#link-to 'stories' class='navbar-brand'}} Tuxedo {{/link-to}}
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li> {{#link-to 'stories.index'}} All {{/link-to}} </li>
+        <li> {{#link-to 'stories.approved'}} Approved {{/link-to}} </li>
+        <li> {{#link-to 'stories.denied'}} Denied {{/link-to}} </li>
+        <li> {{#link-to 'articles.index'}} Articles Index {{/link-to}} </li>
+      </ul>
+    </div>
+  </div>
+</nav>

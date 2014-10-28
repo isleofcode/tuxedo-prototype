@@ -1,0 +1,22 @@
+{{#each}}
+  <div class="media">
+    <a class="pull-left thumbnail" href="#">
+      <img data-src="holder.js/100%x180" class="media-object">
+    </a>
+    <div class="media-body">
+      <h4 class="media-heading">
+        {{#link-to 'story.edit' id}} {{title}} {{/link-to}}
+      </h4>
+      <p> Due to {{trend}} for the past 2 hours </p>
+
+      {{#if approved}}
+        <p> <span class="label label-success"> Approved by {{actioned_by}} </span> </p>
+      {{/if}}
+
+      {{#if denied}}
+        <p> <span class="label label-danger"> Denied by {{actioned_by}} </span> </p>
+      {{/if}}
+
+    </div>
+  </div>
+{{/each}}
